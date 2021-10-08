@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel ./src -d ./lib",
+    "build": "npm run lint && babel ./src -d ./lib",
     "lint": "eslint ./src",
     "test": "mocha --require babel-core/register"
   },
